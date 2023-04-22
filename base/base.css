@@ -5,3 +5,32 @@ body * {
     box-sizing: border-box;
 }
 
+.partners {
+    background-color: aliceblue;
+}
+
+.bg-main {
+    background-color: #74C69D;
+}
+
+.logo,
+.logo2 {
+    height: 60px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: #5569AF;
+}
