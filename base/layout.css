@@ -62,12 +62,13 @@ main > .container {
     text-decoration: none;
     color: black;
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     background-color: white;
-    border-radius: 3px;
-    padding: 0.5em 2em;
-    width: 8em;
+    border-radius: 0.3em;
+    padding: 0.7em 2.4em;
+    width: 9em;
     margin-top: 2em;
+    line-height: 1.2em;
 
 
 }
@@ -75,4 +76,57 @@ main > .container {
 .button:hover {
     text-decoration: underline;
     text-decoration-color: #5569AF;
+}
+
+.partners {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+.text-column2 > h1,
+.text-column2 > h2,
+.text-column2 > p,
+.partners-logo,
+.lm-button {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /*padare tarpus is sonu */
+    padding: 10px;
+}
+
+.text-column2 > h2 {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    color: #74C69D;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.text-column2 > h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    padding: 0;
+
+}
+
+.text-column2 > p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.partners-logo {
+    width: 75%;
+    margin-left: 14%;
+
+}
+
+.lm-button > a {
+    background-color: #212529;
+    color: white;
+    padding: 0.7em 1.6em;
+    line-height: 1em;
 }
