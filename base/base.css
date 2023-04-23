@@ -5,9 +5,13 @@ body * {
     box-sizing: border-box;
 }
 
+
+
 .partners {
     background-color: aliceblue;
     width: 100%;
+    display: flex;
+
 }
 
 .bg-main {

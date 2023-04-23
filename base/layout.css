@@ -76,3 +76,20 @@ main > .container {
     text-decoration: underline;
     text-decoration-color: #5569AF;
 }
+
+.partners {
+    background-color: aliceblue;
+    width: 100%;
+    flex-direction: column;
+}
+
+.text-column2 > h2,
+.text-column2 > h1,
+.text-column2 > p,
+.partners-logo,
+.lm-button {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
