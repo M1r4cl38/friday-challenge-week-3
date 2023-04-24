@@ -78,8 +78,6 @@
     flex-direction: column;
 }
 
-
-
 .text-column2 > h1,
 .text-column2 > h2,
 .text-column2 > p,
@@ -123,5 +121,47 @@
     color: white;
     padding: 0.7em 1.6em;
     line-height: 1em;
+}
+
+
+@media (max-width: 500px) {
+    .container,
+    .partners-logo {
+        display: flex;       
+        flex-direction: column-reverse;
+        padding: 20px;
+        box-sizing: none;
+        align-items: center;
+        
+    }
+        .left-column,
+        .first-img {
+            width: 100%;
+        }
+
+        .partners {
+            margin-top: -40px;
+        }
+
+        .header {
+            display: block;
+        }
+       .logo {
+            display: none;
+        }
+        .logo2 {
+            margin-left: 30px;
+        }
+        .button {
+            margin-bottom: 20px;
+        }
+        .main-nav {
+           display: flex;
+           justify-content: space-evenly;
+        }
+
+        .lm-button {
+            margin-top: -30px;
+        }
 }
 
