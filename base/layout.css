@@ -1,23 +1,28 @@
 .container {
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 135px;
-    padding-top: 43px;
+    padding-top: 0;
     padding-right: 130px;
     padding-bottom: 20px;
 }
 
 .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
+    padding-top: 5%;
 }
 
 .logo-group {
-    width: 550px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20%;
     padding-right: 15px;
 }
 
@@ -64,7 +69,7 @@
     border-radius: 0.3em;
     padding: 0.7em 2.4em;
     width: 9em;
-    margin-top: 2em;
+    margin-top: 1em;
     line-height: 1.2em;
 }
 
@@ -163,5 +168,47 @@
         .lm-button {
             margin-top: -30px;
         }
+}
+
+.content,
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 135px;
+    padding-right: 130px;
+    padding-top: 50px;
+    
+}
+
+.content2 {
+    flex-direction: row-reverse;
+}
+.content-img,
+.content-img2 {
+    width: 50%;
+
+}
+
+.content > .right-column {
+    width: 40%;
+}
+
+.content > .right-column > h1,
+.content2 > .left-column > h1{
+        font-size: 36px;
+        font-family: 'Crimson Text', serif;
+    }
+
+.content > .right-column > p,
+.content2 > .left-column > p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+    }
+
+.content .lm-button,
+.content2 .lm-button {
+    justify-content: flex-start;
 }
 
