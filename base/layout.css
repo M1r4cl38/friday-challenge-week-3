@@ -254,3 +254,35 @@
     font-family: 'Work Sans', sans-serif;
     padding-left: 30px;
 }
+
+.foot {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 35px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.socials > a {
+    font-size: 20px;
+}
+
+.socials > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.fa {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
