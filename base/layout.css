@@ -114,11 +114,18 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     text-align: center;
+    width: 500px;
+    margin-left: 32%;
 }
 
 .partners-logo {
     width: 75%;
     margin-left: 14%;
+}
+
+.partners-logo > img {
+    width: auto;
+    max-height: 60px;
 }
 
 .lm-button > a {
@@ -212,3 +219,38 @@
     justify-content: flex-start;
 }
 
+.talents-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.border {
+    box-shadow: 5px 5px 5px 5px;
+    color: rgb(196, 195, 195);
+    height: 280px;
+    width: 240px;
+  
+    
+}
+
+.border > img {
+    width: auto;
+    max-height: 60%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.border > h2 {
+    color: black;
+    padding: 10px 30px;
+}
+
+.border > p {
+    color: rgb(154, 151, 151);
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 30px;
+}
