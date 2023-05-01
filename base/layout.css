@@ -83,16 +83,16 @@
     flex-direction: column;
 }
 
-.text-column2 > h1,
-.text-column2 > h2,
-.text-column2 > p,
-.partners-logo,
-.lm-button {
+
+.text-column2,
+.talents > .lm-button,
+.partners > .lm-button {
     display: flex;
-    justify-content: center;
-    gap: 40px; /*padare tarpus is sonu */
-    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
+
 
 .text-column2 > h2 {
     font-family: 'Work Sans', sans-serif;
@@ -114,18 +114,21 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     text-align: center;
-    width: 500px;
-    margin-left: 32%;
+    width: 450px;
 }
 
 .partners-logo {
-    width: 75%;
-    margin-left: 14%;
+
+display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
-.partners-logo > img {
+ .partners-logo > img {
     width: auto;
-    max-height: 60px;
+    max-height: 50px;
 }
 
 .lm-button > a {
@@ -135,47 +138,6 @@
     line-height: 1em;
 }
 
-
-@media (max-width: 500px) {
-    .container,
-    .partners-logo {
-        display: flex;       
-        flex-direction: column-reverse;
-        padding: 20px;
-        box-sizing: none;
-        align-items: center;
-        
-    }
-        .left-column,
-        .first-img {
-            width: 100%;
-        }
-
-        .partners {
-            margin-top: -40px;
-        }
-
-        .header {
-            display: block;
-        }
-       .logo {
-            display: none;
-        }
-        .logo2 {
-            margin-left: 30px;
-        }
-        .button {
-            margin-bottom: 20px;
-        }
-        .main-nav {
-           display: flex;
-           justify-content: space-evenly;
-        }
-
-        .lm-button {
-            margin-top: -30px;
-        }
-}
 
 .content,
 .content2 {
@@ -285,4 +247,172 @@
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+    .talents-info {
+        gap: 10px;
+    }
+    .partners-logo {
+        gap: 20px;
+    }    
+    .border {
+        height: 280px;
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .content2,
+    .content {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .logo-group {
+        width: 80%;
+        gap: 10%;
+    }
+    .partners-logo {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .talents-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: none;
+    }
+
+@media (max-width: 800px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .content2,
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container,
+    .partners-logo {
+        display: flex;       
+        flex-direction: column-reverse;
+        padding: 20px;
+        box-sizing: none;
+        align-items: center; 
+    }
+
+    .first-img {
+        width: 80%;
+    }
+    .content,
+    .content2 {
+        display: flex;       
+        flex-direction: column;
+
+    }
+    .content-img,
+    .content-img2 {
+        width: 75%;
+        padding-bottom: 30px;
+    }
+
+   .content > .right-column {
+        width: 80%;
+    }
+
+    .left-column {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container,
+    .partners-logo {
+        display: flex;       
+        flex-direction: column-reverse;
+        padding: 20px;
+        box-sizing: none;
+        align-items: center; 
+    }
+        .left-column,
+        .first-img {
+            width: 100%;
+        }
+
+        .partners {
+            margin-top: -40px;
+        }
+        .partners-logo {
+            padding-bottom: 0;
+        }
+        .header {
+            display: block;
+        }
+       .logo {
+            display: none;
+        }
+        .logo2 {
+            margin-left: 30px;
+        }
+        .button {
+            margin-bottom: 20px;
+        }
+        .main-nav {
+           display: flex;
+           justify-content: space-evenly;
+        }
+
+        .lm-button {
+            margin-top: 30px;
+        }
+        .left-column {
+            padding-left: 40px;
+        }
+        .foot {
+            display: flex;
+            flex-direction: column;
+        }
+        .socials {
+            padding-bottom: 15px;
+            gap: 50px;
+        }
+        .socials > a {
+            font-size: 25px;
+        }
+}
+
+@media (max-width: 450px) {
+    .content > .right-column,
+    .left-column {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .talents-info {
+        gap: 50px;
+    }
+    .border {
+        width: 300px;
+        height: 350px;
+
+    }
+    .text-column2 > p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
