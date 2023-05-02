@@ -292,6 +292,7 @@ display: flex;
     .logo {
         display: none;
     }
+}
 
 @media (max-width: 800px) {
     .container {
@@ -414,5 +415,13 @@ display: flex;
     .text-column2 > p {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .main-nav {
+        gap: 0;
+    }
+
+    .socials {
+        gap: 15px;
     }
 }
